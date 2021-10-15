@@ -12,7 +12,9 @@ provider "oci" {
 }
 
 terraform {
-  backend "http" {}
+  backend "http" {
+    update_method = "PUT"
+  }
 }
 
 module "networking" {
