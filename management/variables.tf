@@ -2,6 +2,10 @@ variable "tenancy_id" {
   description = "oci tenancy ocid"
 }
 
+variable "compartment_id" {
+  description = "oci compartment ocid"
+}
+
 variable "fingerprint" {
   description = "oci fingerprint"
 }

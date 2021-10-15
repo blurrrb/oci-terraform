@@ -1,13 +1,14 @@
-module "management" {
-  source = "./management"
+data "oci_identity_availability_domain" "default_ad" {
+  compartment_id = var.tenancy_id
+  ad_number      = var.ad_number
+}
 
-  # variables
-  tenancy_id       = var.tenancy_id
-  fingerprint      = var.fingerprint
-  user_id          = var.user_id
-  region           = var.region
+provider "oci" {
+  tenancy_ocid     = var.tenancy_id
+  user_ocid        = var.user_id
   private_key_path = var.private_key_path
-  ad_number        = var.ad_number
+  fingerprint      = var.fingerprint
+  region           = var.region
 }
 
 module "networking" {
