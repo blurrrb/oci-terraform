@@ -11,6 +11,10 @@ provider "oci" {
   region           = var.region
 }
 
+terraform {
+  backend "http" {}
+}
+
 module "networking" {
   source = "./networking"
 
