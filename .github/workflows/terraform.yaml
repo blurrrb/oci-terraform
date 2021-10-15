@@ -25,7 +25,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       
-    - name: COnfigure environment
+    - name: Configure environment
       run: |
         mkdir -p ~/.oci
         echo ${{secrets.OCI_PRIVATE_KEY}} | base64 -d > ~/.oci/key.pem
