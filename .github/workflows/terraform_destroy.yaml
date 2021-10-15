@@ -2,7 +2,7 @@ name: 'Terraform Destroy'
 
 jobs:
   terraform:
-    name: 'Terraform'
+    name: 'Terraform Destory'
     runs-on: ubuntu-latest
     environment: production
 
