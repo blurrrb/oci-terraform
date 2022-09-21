@@ -4,11 +4,11 @@ data "oci_identity_availability_domain" "default_ad" {
 }
 
 provider "oci" {
-  tenancy_ocid         = var.tenancy_id
-  user_ocid            = var.user_id
-  private_key          = var.private_key
-  fingerprint          = var.fingerprint
-  region               = var.region
+  tenancy_ocid = var.tenancy_id
+  user_ocid    = var.user_id
+  private_key  = var.private_key
+  fingerprint  = var.fingerprint
+  region       = var.region
 }
 
 terraform {
