@@ -22,10 +22,6 @@ variable "private_key_path" {
   description = "private key used to access oci apis"
 }
 
-variable "private_key_password" {
-  description = "password used to decrypt private key"
-}
-
 variable "ad_number" {
   default = 1
 }

@@ -7,7 +7,6 @@ provider "oci" {
   tenancy_ocid         = var.tenancy_id
   user_ocid            = var.user_id
   private_key          = var.private_key
-  private_key_password = var.private_key_password
   fingerprint          = var.fingerprint
   region               = var.region
 }
