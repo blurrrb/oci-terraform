@@ -19,8 +19,11 @@ variable "region" {
 }
 
 variable "private_key_path" {
-  description = "path to private key used to access oci apis"
-  default     = "~/.oci/key.pem"
+  description = "private key used to access oci apis"
+}
+
+variable "private_key_password" {
+  description = "password used to decrypt private key"
 }
 
 variable "ad_number" {
